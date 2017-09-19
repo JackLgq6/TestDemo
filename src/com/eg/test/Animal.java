@@ -8,6 +8,7 @@ package com.eg.test;
 羊群里面有8只母羊，2只公羊。每只母羊每年10月生产5只小羊，性别随机。
 每年2月农夫出售20%羊，公羊母羊各一半（若为20%的羊数为奇数，多的那一头羊为公羊）。
 小羊2年后开始生产，性别随机。
+
 公牛和母牛各1头，每2年生产1只小牛。小牛2年会后开始生产，小牛的性别随机。
 
 现在是2017年9月1日，请问10年后农产有多少只鸡，多少头养，多少头牛？
@@ -15,8 +16,8 @@ package com.eg.test;
 */
 public abstract class Animal {
 
-	private int mHead = 1;
-	private int mFeet = 2;
+	public int mHead = 1;
+	public int mFeet = 2;
 	
-	public abstract void procreate();
+	public abstract void procreate(); 
 }

@@ -17,4 +17,17 @@ package com.eg.test;
  
 public class Test {
 
+	public static void main(String[] args) {
+		Ewe ewe = new Ewe(80, 2);
+		for (int i = 1; i <= 10; i++) {
+			if (i % 2 != 0) {
+				ewe.toEwe();
+				ewe.procreate();
+				ewe.sell();	
+			} else {
+				ewe.procreate();
+				ewe.sell();
+			}
+		}
+	}
 }
