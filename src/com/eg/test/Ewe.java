@@ -39,10 +39,10 @@ public class Ewe extends Animal {
 				}
 			}
 			if (year % 2 != 0) {
-				System.out.print("生了" + mSmallEweCount  + "只" + "小母羊， 生了" + pro_small_ram_count+ "只小公羊， ");
+				System.out.print("第"+ year + "年：" + "生了" + mSmallEweCount  + "只" + "小母羊， 生了" + pro_small_ram_count+ "只小公羊， ");
 				
 			} else {
-				System.out.print("生了" + pro_small_ewe_count  + "只" + "小母羊， 生了" + pro_small_ram_count+ "只小公羊， ");
+				System.out.print("第"+ year + "年：" + "生了" + pro_small_ewe_count  + "只" + "小母羊， 生了" + pro_small_ram_count+ "只小公羊， ");
 //				System.out.println();
 //				System.out.println(mEweCount);
 //				System.out.println(mRamCount);
@@ -103,10 +103,10 @@ public class Ewe extends Animal {
 					}
 				}*/
 			}
-			mCount = mRamCount + mEweCount + mSmallEweCount;
+			mCount = mRamCount + mEweCount + mSmallEweCount + pro_small_ewe_count;
 			System.out.print("， 卖掉"+sell_ewe_count + "只母羊" + ", " + "卖掉" + sell_ram_count + "只公羊， ");
 			System.out.println("第" + year + "年" + "公羊的数量：" + mRamCount + ", 母羊的数量：" + mEweCount
-					+ ",小母羊的数量：" + mSmallEweCount + ",羊的总数：" + mCount);
+					+ ",小母羊的数量：" + (mSmallEweCount + pro_small_ewe_count) + ",羊的总数：" + mCount);
 		}
 	}
 
@@ -116,8 +116,8 @@ public class Ewe extends Animal {
 			mSmallEweCount = 0;
 		}
 		if (year % 2 == 0 && year != 2) {
-			/*System.out.println(mEweCount);
-			System.out.println(pro_small_ewe_count);*/
+			System.out.println(mEweCount);
+			System.out.println(pro_small_ewe_count);
 			mEweCount += pro_small_ewe_count;
 			pro_small_ewe_count = 0;
 		}
