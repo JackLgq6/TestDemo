@@ -19,5 +19,5 @@ public abstract class Animal {
 	public int mHead = 1;
 	public int mFeet = 2;
 	
-	public abstract void procreate(); 
+	public abstract void procreate(int month, int year); 
 }
